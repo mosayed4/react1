@@ -15,7 +15,6 @@ export const Products = () => {
      console.log(products);
     return (
     <div className='products-main'>
-        <h1> Our Products  </h1>
         <div className='products-container'>
         {
         products?.map((pord)=><Card key={pord.id} dataa={pord}/>)

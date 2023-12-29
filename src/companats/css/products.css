@@ -1,55 +1,48 @@
-.products-main{
-    width:100% ;
-    width: auto;
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
-}
-
-
-.products-container{
-    width: 90%;
-    height: auto;
-    min-height: 100vh;
-    flex-wrap: wrap;
-    padding: 50px 0;
+.products-main {
+    width: 100%;
     display: flex;
+    align-items: center;
     justify-content: center;
-    align-items: center;
-    
+    gap: 10px;
 }
-.single-product{
-    border: solid 3px;
+
+.products-container {
+    border: double 5px #000000;
+    width: 80%;
     border-radius: 15px;
-    height: auto;
-    width: 300px;
     overflow: hidden;
-    background-color: cadetblue;
-    margin: px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    margin: 5px;
-    padding-bottom: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* تقسيم العمود إلى 3 أجزاء متساوية */
+    gap: 7px;
+    padding: 20px;
+    margin-top: 2%;
+}
+
+.single-product {
+    box-sizing: border-box;
+    border: double 2px #5f5252;
+    cursor: pointer;
+    border-radius: 15px;
+    overflow: hidden;
+    margin-top: 20%;
+    height: 350px; 
     
 }
+
+
 .single-product img {
-    width: 300px;
-    height:250px;
+    width:160px;
+    height: 220px;
     object-fit: cover;
-    padding-bottom: 10px;
-    
-    
+    border-radius: 15px 15px 0 0;
 }
-.single-product img:hover{ 
-    width: 310px ;
-    height: 310px;
-    border-radius: 10px;
-    border: 2px solid rgb(47, 127, 255);
-    background-color: rgb(0, 94, 166);
-    box-shadow: inset;
+
+.price1{
+    font-family: 'Courier New', Courier, monospace;
     
-    
+color: #c02d2d;
+}
+
+.single-product  :hover { 
+ background-color: #5f5252;
 }
